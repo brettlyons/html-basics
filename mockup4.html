@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style type="text/css">
+<!--
+.container {
+  display:flex;
+  flex-direction: column;
+}
+.item {
+  justify-content:stretch;
+  margin-left:2%;
+  padding-left:2%;
+  margin-right:auto;
+  padding-right:auto;
+}
+.item-right {
+  text-align:right;
+  justify-content:stretch;
+  padding-right:80%;
+  margin-right:80%;
+  padding-left:5%;
+  margin-left:5%;
+}
+-->
+    </style>
+
     <meta charset="UTF-8">
     <title></title>
   </head>
   <body>
-    <h1 style="color:orange">Your information:</h1>
-    <p>
-    <form>
-      <label for="name">Name:
-        <input id="name" autocomplete="name"></label>
-        <p>
-        <label for="email">Email:
-          <input type="email" id="email" autocoplete="email"></label>
-        <p>
-        <label for="phone">Telephone:
-          <input type="tel" id="phone" autocomplete="telephone"></label>
-        <p>
-        <label for="colorado-radio">From Colorado?
-          <input type="radio" name="colo-rad" id="colorado-radio"></label>
-        <label for="not-colorado">Not from colorado?
-          <input type="radio" name="colo-rad" id="not-colorado"></label>
+    <div class="container">
+      <div class="item">
+        <h1 style="color:orange">Your information:</h1>
+      </div>
       <p>
-      <input type="submit" value="Submit" style="background-color:orange;">
-    </form>
+      <form>
+        <p>
+      <div class="item">
+          <label for="name">Name:</label>
+            <div class="item-right">
+              <input id="name" autocomplete="name">
+            </div>
+      </div>
+      <p>
 
+      <div class="item">
+          <label for="email">Email:</label>
+            <div class="item-right">
+              <input type="email" id="email" autocoplete="email">
+            </div>
+      </div>
+      <p>
+      <div class="item">
+          <label for="phone">Telephone:</label>
+            <div class="item-right">
+              <input type="tel" id="phone" autocomplete="telephone">
+            </div>
+      </div>
+      <p>
+      <div class="item">
+          <label for="colorado-radio">From Colorado?
+            <input type="radio" name="colo-rad" id="colorado-radio"></label>
+          <label for="not-colorado">Not from colorado?
+            <input type="radio" name="colo-rad" id="not-colorado"></label>
+      </div>
+      <p>
+      <div class="item">
+          <input type="submit" value="Submit" style="background-color:orange;">
+        </form>
+      </div>
+    </div>
   </body>
 </html>
